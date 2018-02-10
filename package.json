@@ -1,0 +1,23 @@
+{
+  "name": "type-vue",
+  "version": "0.1.0",
+  "description": "typescript and vue",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Takayuki Oda <takayuki@odashi.me>",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^0.28.9",
+    "ts-loader": "^3.5.0",
+    "typescript": "^2.7.1",
+    "vue-loader": "^14.1.1",
+    "vue-template-compiler": "^2.5.13",
+    "webpack": "^3.10.0"
+  },
+  "dependencies": {
+    "vue": "^2.5.13"
+  }
+}
