@@ -1,8 +1,6 @@
 <template>
-	<div>
-		<div class="greeting">Hello {{ name }}{{ exclamationMarks }}</div>
-		<button @click="decrement">-</button>
-		<button @click="increment">+</button>
+	<div class="hello">
+		<h1>{{ msg }}</h1>
 	</div>
 </template>
 
@@ -10,32 +8,17 @@
 import Vue from "vue";
 
 export default Vue.extend({
-	props: ['name', 'initialEnthusiasm'],
+	name: 'HellowWorld',
 	data() {
 		return {
-			enthsiasm: this.initialEnthusiasm,
-		}
-	},
-	methods: {
-		increment() {
-			this.enthsiasm++;
-		},
-		decrement() {
-			if (this.enthsiasm > 1) {
-				this.enthsiasm--;
-			}
-		}
-	},
-	computed: {
-		exclamationMarks(): string {
-			return Array(this.enthsiasm + 1).join("!");
+			msg: 'Trying a sample of Vue2.5 using TypeScript2.7',
 		}
 	}
 });
 </script>
 
-<style>
-.greeting {
-	font-size: 20px;
+<style scoped>
+h1, h2 {
+	font-weight: normal;
 }
 </style>

@@ -1,12 +1,23 @@
 const path    = require('path');
 const webpack = require('webpack');
 
+function resolve(dir) {
+  return path.join(__dirname, dir);
+}
+
 module.exports = {
   entry: './src/index.ts',
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
     filename: 'bundle.js',
+  },
+  resolve: {
+    extensions: ['.ts', '.js', '.vue', '.json'],
+    alias: {
+      'vue$': 'vue/dist/vue.esm.js',
+      '@': resolve('src'),
+    }
   },
   module: {
     rules: [
@@ -37,12 +48,6 @@ module.exports = {
         }
       },
     ],
-  },
-  resolve: {
-    extensions: ['.ts', '.js', '.vue', '.json'],
-    alias: {
-      'vue$': 'vue/dist/vue.esm.js',
-    }
   },
   devServer: {
     historyApiFallback: true,
