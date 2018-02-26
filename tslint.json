@@ -1,0 +1,21 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+    "recommended",
+  ],
+  "jsRules": { },
+  "rules": {
+    "quotemark": [
+      true,
+      "single"
+    ],
+    "indent": [
+      true
+    ],
+    "interface-name": [
+      false
+    ],
+    "arrow-parens": true
+  },
+  "rulesDirectory": []
+}
