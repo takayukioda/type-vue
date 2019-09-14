@@ -18,7 +18,7 @@
     "url-loader": "^0.6.2",
     "vue-loader": "^14.2.4",
     "vue-template-compiler": "^2.6.4",
-    "webpack": "^3.12.0"
+    "webpack": "^4.40.2"
   },
   "dependencies": {
     "vue": "^2.6.4",
